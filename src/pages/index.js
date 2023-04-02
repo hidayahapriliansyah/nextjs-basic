@@ -1,12 +1,22 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
+import { Inter } from 'next/font/google';
+import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div>Welcome</div>
+    <>
+      <ul>
+        <li>
+          <Link href="/users/detail">Users Detail</Link>
+        </li>
+        <li>
+          <Link href="/users">Users</Link>
+        </li>
+        <li>
+          <Link href="/about">About</Link>
+        </li>
+      </ul>
+      <h1>Welcome</h1>
+    </>
   )
 }
