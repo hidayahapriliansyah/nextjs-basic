@@ -1,22 +1,10 @@
-import { Inter } from 'next/font/google';
-import Link from 'next/link';
-const inter = Inter({ subsets: ['latin'] })
+import Header from '../components/Header';
 
 export default function Home() {
   return (
     <>
-      <ul>
-        <li>
-          <Link href="/users/detail">Users Detail</Link>
-        </li>
-        <li>
-          <Link href="/users">Users</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-      </ul>
+      <Header />
       <h1>Welcome</h1>
     </>
-  )
+  );
 }
