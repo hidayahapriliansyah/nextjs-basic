@@ -1,5 +1,11 @@
-export default function detail() {
+import Layout from '../../components/Layout';
+
+function about() {
   return (
-    <div>user detail</div>
-  )
+    <Layout>
+      <div>User Detail</div>
+    </Layout>
+  );
 }
+
+export default about;

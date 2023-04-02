@@ -1,7 +1,11 @@
+import Layout from '../components/Layout';
+
 function about() {
   return (
-    <div>about</div>
-  )
-};
+    <Layout>
+      <div>about</div>
+    </Layout>
+  );
+}
 
 export default about;

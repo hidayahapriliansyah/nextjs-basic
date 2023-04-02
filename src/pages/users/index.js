@@ -1,5 +1,11 @@
-export default function index() {
+import Layout from '../../components/Layout';
+
+function about() {
   return (
-    <div>index user</div>
-  )
-};
+    <Layout>
+      <div>User Index</div>
+    </Layout>
+  );
+}
+
+export default about;
